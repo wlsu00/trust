@@ -9,6 +9,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <script>
+    if (window.innerWidth <= 600) {
+      location.replace("위탁판매가이드_반응형.html");
+    }
+  </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #F5F0E8; }
@@ -116,9 +121,7 @@
                   onClick={() => { setActiveStep(0); setExpandedFlow(null); }}
                   style={{ height: 36, cursor: "pointer" }}
                 />
-                <a href="./" text-decoration="none">
                 <span style={{ fontSize: 18, fontWeight: 700, color: "#fff", letterSpacing: -0.3 }}>한국철근거래소</span>
-                  </a>
               </div>
               <h1 style={{ fontSize: 28, fontWeight: 700, letterSpacing: -0.5 }}>위탁판매 가이드</h1>
               <div style={{ fontSize: 13, color: "#9A8E7A", marginTop: 6 }}>공급자(위탁자) 기준 · 2026.02.20</div>
